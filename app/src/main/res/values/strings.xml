@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">mapTestApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_api_key">AIzaSyBSHM_YstjcnaaGY0ps9KrPCoT547BVrys</string>
+    <string name="add_address_button">Add Address</string>
+    <string name="start_label">СТАРТ</string>
+    <string name="hide">hide</string>
+
+</resources>

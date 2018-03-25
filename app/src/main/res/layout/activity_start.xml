@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/start_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorStartBt"
+            android:layout_margin="@dimen/padding_ui_middle"
+            android:textStyle="bold|italic"
+            android:layout_weight="1"
+            android:text="@string/start_label"/>
+
+        <Spinner
+            android:id="@+id/regitry_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_ui_middle"
+            android:layout_marginLeft="@dimen/padding_ui_middle"
+            android:layout_marginRight="@dimen/padding_ui_middle"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/show_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="@string/hide"/>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/padding_ui_middle">
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/container_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <Button
+            android:id="@+id/add_field_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_address_button"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
